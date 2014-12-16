@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+        android:gravity="center"
+        android:text="关于本软件" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="18dip"
+        android:text="软件介绍："/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:text="　　首先感谢您使用生活小助手工具！\n　　本应用融合了，人脸识别、快递查询、号码归属地查询、天气查询、自动聊天机器人、指南针、聊天室、留言板等几大功能，均采用网络最新数据，实时更新，因此本软件需要联网操作。\n　　随后还会更新增加更多功能，敬请期待。"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="18dip"
+        android:text="开 发 者 ：闫庚哲" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="18dip"
+        android:text="官方网站：http://www.i3geek.com" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="18dip"
+        android:text="联系方式：emailvip@vip.qq.com" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="18dip"
+        android:text="更新记录：" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.74" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_about_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_about_2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:background="@drawable/about_update"
+            android:layout_gravity="center"
+            android:textSize="18dip"
+            android:text="　　检查更新" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_face_1"
+        android:layout_width="65dip"
+        android:layout_height="50dip"
+        android:textSize="20sp"
+        android:background="@drawable/wuliu_back"
+        android:text="返回" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.66" >
+
+        <Button
+            android:id="@+id/button_face_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="94dp"
+            android:background="@drawable/button"
+            android:text="查询"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_message_1"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="0dip"
+            android:layout_alignTop="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText_message_1"
+            android:layout_alignBottom="@+id/editText_message_1"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="快递单号"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_message_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_face_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="62dp"
+            android:ems="10"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText_message_1"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/spinner1"
+            android:text="选择快递"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

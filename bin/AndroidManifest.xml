@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.search"
+    android:versionCode="4"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme_Content" >
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="c0175ead" />
+        <meta-data
+            android:name="BaiduMobAd_APP_SEC"
+            android:value="c0175ead" />
+        <!-- 注册AppActivity -->
+        <activity
+            android:name="com.baidu.mobads.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name="com.example.search.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.wuliu.WuliuMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.guishu.GuishuMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.weather.TianqiMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.face.FaceMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.message.MessageMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.about.AboutMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.search.welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.search.chat.ChatMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.compass.CompassMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.search.robot.RobotMain"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+   
+
+</manifest>
